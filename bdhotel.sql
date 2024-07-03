@@ -5,8 +5,8 @@ USE  bdhotel;
 -- Creación de la tabla TipoReserva
 CREATE TABLE TIPORESERVA (
     tipo_res INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
-    descripcion VARCHAR(255)
+    nombre VARCHAR(50) NOT NULL,
+    descripcion VARCHAR(50)
 );
 
 -- Creación de la tabla Pago
@@ -42,7 +42,7 @@ CREATE TABLE HABITACION (
 -- Creación de la tabla TipoHabitacion
 CREATE TABLE TIPOHABITACION (
     tipo_id INT PRIMARY KEY AUTO_INCREMENT,
-    tipo_nombre VARCHAR(100) NOT NULL,
+    tipo_nombre VARCHAR(50) NOT NULL,
     capacidad INT NOT NULL
 );
 
@@ -58,17 +58,17 @@ CREATE TABLE DISPONIBILIDAD (
 -- Creación de la tabla Cliente
 CREATE TABLE CLIENTE (
     cliente_id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
     telefono VARCHAR(20),
     fecha_alta DATE NOT NULL,
-    correo VARCHAR(100) NOT NULL
+    correo VARCHAR(50) NOT NULL
 );
 
 -- Creación de la tabla Hotel
 CREATE TABLE HOTEL (
     hotel_id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
-    direccion VARCHAR(255),
+    nombre VARCHAR(50) NOT NULL,
+    direccion VARCHAR(50),
     telefono INT NOT NULL
 );
 
