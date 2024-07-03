@@ -61,7 +61,7 @@ CREATE TABLE CLIENTE (
     nombre VARCHAR(50) NOT NULL,
     telefono VARCHAR(20),
     fecha_alta DATE NOT NULL,
-    correo VARCHAR(50) NOT NULL
+    correo VARCHAR(50) UNIQUE NOT NULL 
 );
 
 -- Creación de la tabla Hotel
