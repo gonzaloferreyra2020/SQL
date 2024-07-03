@@ -24,7 +24,7 @@ CREATE TABLE RESERVA (
     fecha_salida DATE NOT NULL,
     cliente_id INT,
     habitacion_id INT,
-    tipo_reserva_id INT,
+    tipo_res INT,
     FOREIGN KEY (cliente_id) REFERENCES CLIENTE(cliente_id),
     FOREIGN KEY (habitacion_id) REFERENCES HABITACION(habitacion_id),
     FOREIGN KEY (tipo_reserva_id) REFERENCES TIPORESERVA(tipo_reserva_id)
@@ -59,14 +59,17 @@ CREATE TABLE DISPONIBILIDAD (
 CREATE TABLE CLIENTE (
     cliente_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
-    telefono VARCHAR(20)
+    telefono VARCHAR(20),
+    fecha_alta DATE NOT NULL,
+    correo VARCHAR(100) NOT NULL
 );
 
 -- Creación de la tabla Hotel
 CREATE TABLE HOTEL (
     hotel_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
-    direccion VARCHAR(255)
+    direccion VARCHAR(255),
+    telefono INT NOT NULL
 );
 
 
