@@ -59,7 +59,7 @@ CREATE TABLE DISPONIBILIDAD (
 CREATE TABLE CLIENTE (
     cliente_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
-    telefono VARCHAR(20),
+    telefono VARCHAR(20) NOT NULL ,
     fecha_alta DATE NOT NULL,
     correo VARCHAR(50) UNIQUE NOT NULL 
 );
@@ -68,8 +68,8 @@ CREATE TABLE CLIENTE (
 CREATE TABLE HOTEL (
     hotel_id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
-    direccion VARCHAR(50),
-    telefono INT NOT NULL
+    direccion VARCHAR(50) NOT NULL,
+    telefono VARCHAR(20) NOT NULL 
 );
 
 
