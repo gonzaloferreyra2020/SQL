@@ -62,7 +62,7 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
 | fecha_salida      | (*,1) | precio         |       | tipo_id    FK     |   
 | cliente_id FK     |       | hotel_id   FK  |       | disponible        |      
 | habitacion_id FK  |       |                |       +-------------------+                       
-|                   |       |                |                            
+| IDTIPORES   fk    |       |                |                            
 |                   |       |                |                         
 +-------------------+       |                | <-------------|        
        |  (*,               +---------------+       (*,1)    |
