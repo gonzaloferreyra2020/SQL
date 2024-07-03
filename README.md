@@ -82,3 +82,66 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
                                                                                
 
 ```
+## Listado de tablas y descripcion
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| TIPORESERVA   | tipo_res          | INT                                   |
+|               | nombre            | VARCHAR(50)                           |
+|               | descripcion       | VARCHAR(50)                           |
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| RESERVA       | reserva_id        | INT                                   |
+|               | fecha_entrada     | DATE NOT NULL                         |
+|               | fecha_salida      | DATE NOT NULL                         |
+|               | cliente_id        | INT                                   |
+|               | habitacion_id     | INT                                   |
+|               | tipo_res          | INT                                   |
+
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| PAGO          | pago_id           | INT                                   |
+|               | reserva_id        | INT                                   |
+|               | monto             | DECIMAL (10,2)                        |
+
+
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| HABITACION    | habitacion_id     | INT                                   |
+|               | tipo_id           | INT                                   |
+|               | hotel_id          | INT                                   |
+
+
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+|TIPOHABITACION | tipo_id           | INT                                   |
+|               | tipo_nombre       | VARCHAR(50) NOT NULL                  |
+|               | capacidad         | INT NOT NULL                          |
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+|DISPONIBILIDAD | disponibilidad_id | INT                                   |
+|               | tipo_id           | INT                                   |
+|               | fecha             | DATE NOT NULL                         |
+|               | disponible        | BOOLEAN NOT NULL                      |
+
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| CLIENTE       | cliente_id        | INT                                   |
+|               | nombre            | VARCHAR(50) NOT NULL                  |
+|               | telefono          | VARCHAR(20) NOT NULL                  |
+|               | fecha_alta        | DATE NOT NULL                         |
+|               | correo            | VARCHAR(50) UNIQUE NOT NULL           |
+
+| Tabla         | Columna           | Tipo de Datos                         |
+| ------------- | ----------------- |                                  ---: |
+| HOTEL         | hotel_id          | INT                                   |
+|               | nombre            | VARCHAR(50) NOT NULL                  |
+|               | direccion         | VARCHAR(50) NOT NULL                  |
+|               | telefono          | VARCHAR(20) NOT NULL                  |
+
