@@ -8,7 +8,7 @@
     * ~ 15 tablas, entre las cuales debe haber al menos 1 tabla de hechos,  2 tablas transaccionales.
     * ~ 5 vistas.
     * ~ 2 stored procedure.
-    * ~ 2  trigger.
+    * ~ 2 trigger.
     * ~ 2 funciones
     
 - El documento debe contener:
@@ -16,7 +16,7 @@
     - Objetivo
     - Situación problemática
     - Modelo de negocio
-    - Diagrama de entidad relació
+    - Diagrama de entidad relación
     - Listado de tablas con descripción de estructura (columna,descripción, tipo de datos, tipo de clave)
     - Scripts de creación de cada objeto de la base de datos
     - Scripts de inserción de datos
