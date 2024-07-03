@@ -50,19 +50,19 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
  +-------------+           +-----------------+
  | TIPORESERVA |           |      PAGO       |
  +-------------+           +-----------------+
- | IDTIPORES PK|           | pago_id         |
- |    TIPO     |       |---| reserva_id (FK) |
+ | tipo_res  PK|           | pago_id    PK   |
+ | nombre      |       |---| reserva_id (FK) |
  +-------------+       |   | monto           |
          |             |   +-----------------+
-+-------------------+  |    +----------------+       +-------------------+      
-|   RESERVA         |  |    |   HABITACION   |       | DISPONIBILIDAD    |      
-+-------------------+  |    +----------------+       +-------------------+      
-| reserva_id PK     |<-|    |habitacion_id PK| (1,*) | disponibilidad_id |     
-| fecha_entrada     |<------| tipo_id        |<------| fecha             |      
-| fecha_salida      | (*,1) | precio         |       | tipo_id    FK     |   
-| cliente_id FK     |       | hotel_id   FK  |       | disponible        |      
-| habitacion_id FK  |       |                |       +-------------------+                       
-| IDTIPORES   fk    |       |                |                            
++-------------------+  |    +----------------+       +-----------------------+      
+|   RESERVA         |  |    |   HABITACION   |       | DISPONIBILIDAD        |      
++-------------------+  |    +----------------+       +-----------------------+      
+| reserva_id PK     |<-|    |habitacion_id PK| (1,*) | disponibilidad_id PK  |     
+| fecha_entrada     |<------| tipo_id        |<------| fecha                 |      
+| fecha_salida      | (*,1) | hotel_id   FK  |       | tipo_id    FK         |   
+| cliente_id FK     |       |                |       | disponible            |      
+| habitacion_id FK  |       |                |       +-----------------------+                       
+| tipo_res    fk    |       |                |                            
 |                   |       |                |                         
 +-------------------+       |                | <-------------|        
        |  (*,               +---------------+       (*,1)    |
@@ -71,7 +71,7 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
 +-----------------+       +---------------- +       +-------------------+           
 |  CLIENTE        |       |   HOTEL         |       |  TIPOHABITACION   |     
 +-----------------+       +-----------------+       +-------------------+     
-|                 |       | HOTEL_ID      PK|       | tipo_id PK        |      
+|                 |       | HOTEL_ID    PK  |       |  tipo_id PK       |      
 | cliente_id PK   |       | NOMBRE          |       |  nombre           |
 | nombre          |       | DIRECCION       |       |  capacidad        |       
 | telefono        |       | TELEFONO        |       |                   |      
