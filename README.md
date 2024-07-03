@@ -1,5 +1,8 @@
 # Primer Entrega
 @Gonzalo Ferreyra
+@Comisión 57190
+@Leonel Lo Presti
+@Anderson Ocaña
 
 ---
 
