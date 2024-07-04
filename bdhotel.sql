@@ -13,8 +13,7 @@ CREATE TABLE TIPORESERVA (
 CREATE TABLE PAGO (
     pago_id INT PRIMARY KEY AUTO_INCREMENT,
     reserva_id INT,
-    monto DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (reserva_id) REFERENCES RESERVA(reserva_id)
+    monto DECIMAL(10, 2) NOT NULL
 );
 
 -- Creación de la tabla Reserva
@@ -24,19 +23,14 @@ CREATE TABLE RESERVA (
     fecha_salida DATE NOT NULL,
     cliente_id INT,
     habitacion_id INT,
-    tipo_res INT,
-    FOREIGN KEY (cliente_id) REFERENCES CLIENTE(cliente_id),
-    FOREIGN KEY (habitacion_id) REFERENCES HABITACION(habitacion_id),
-    FOREIGN KEY (tipo_reserva_id) REFERENCES TIPORESERVA(tipo_reserva_id)
+    tipo_res INT
 );
 
 -- Creación de la tabla Habitacion
 CREATE TABLE HABITACION (
     habitacion_id INT PRIMARY KEY AUTO_INCREMENT,
     tipo_id INT,
-    hotel_id INT,
-    FOREIGN KEY (tipo_id) REFERENCES TIPOHABITACION(tipo_id),
-    FOREIGN KEY (hotel_id) REFERENCES HOTEL(hotel_id)
+    hotel_id INT
 );
 
 -- Creación de la tabla TipoHabitacion
@@ -51,8 +45,7 @@ CREATE TABLE DISPONIBILIDAD (
     disponibilidad_id INT PRIMARY KEY AUTO_INCREMENT,
     tipo_id INT,
     fecha DATE NOT NULL,
-    disponible BOOLEAN NOT NULL,
-    FOREIGN KEY (tipo_id) REFERENCES TIPOHABITACION(tipo_id)
+    disponible BOOLEAN NOT NULL
 );
 
 -- Creación de la tabla Cliente
@@ -71,5 +64,19 @@ CREATE TABLE HOTEL (
     direccion VARCHAR(50) NOT NULL,
     telefono VARCHAR(20) NOT NULL 
 );
+
+--Alter table
+
+ALTER TABLE PAGO ADD CONSTRAINT FK_PAGO_RESERVA FOREIGN KEY (reserva_id) REFERENCES RESERVA (reserva_id);
+
+ALTER TABLE RESERVA ADD CONSTRAINT FK_RESERVA_CLIENTE FOREIGN KEY (cliente_id) REFERENCES CLIENTE (cliente_id);
+ALTER TABLE RESERVA ADD CONSTRAINT FK_RESERVA_HAB FOREIGN KEY (habitacion_id) REFERENCES HABITACION (habitacion_id);
+ALTER TABLE RESERVA ADD CONSTRAINT FK_RESERVA_TIPORES FOREIGN KEY (tipo_reserva_id) REFERENCES TIPORESERVA (tipo_reserva_id);
+
+ALTER TABLE HABITACION ADD CONSTRAINT FK_HAB_TIPHAB FOREIGN KEY (tipo_id) REFERENCES TIPOHABITACION (tipo_id);
+ALTER TABLE HABITACION ADD CONSTRAINT FK_HAB_TIPHAB FOREIGN KEY (hotel_id) REFERENCES HOTEL (hotel_id);
+
+ALTER TABLE DISPONIBILIDAD FOREIGN KEY (tipo_id) REFERENCES TIPOHABITACION (tipo_id);
+
 
 
