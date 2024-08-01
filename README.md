@@ -1,4 +1,4 @@
-# <center>Primer Entrega</center>
+# <center>Segunda Entrega</center>
 @Alumno: Gonzalo Ferreyra
 
 @Comisión: 57190
