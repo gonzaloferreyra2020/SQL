@@ -1,0 +1,41 @@
+hotel_id,nombre,direccion,email,telefono
+43876219,Hotel Mirage,11 Melrose Drive,contacto@hotelmirage.com,(817) 9202070
+98234017,Oasis del Sol,997 Milwaukee Alley,reservas@oasisdelsol.com,(459) 6926450
+19584762,Villa Estrella,9 Lawn Lane,info@villaestrella.com,(238) 2854256
+38475092,Hotel Luna Nova,097 Nevada Point,info@hotellunanova.com,(909) 6148672
+72648019,Refugio del Valle,418 La Follette Avenue,reservas@refugiodelvalle.com,(609) 3167854
+58392047,Paraíso Celestial,723 Knutson Hill,contacto@paraisocelestial.com,(772) 8301103
+10758943,Hotel Elysium,9703 Ridge Oak Road,reservas@hotelelysium.com,(745) 3834276
+93048572,Jardines del Mar,83 Carpenter Way,info@jardinesdelmar.com,(920) 1295130
+47832096,Vista Dorada Resort,18520 Del Sol Park,contacto@vistadoradaresort.com,(687) 7371794
+19276048,Cielo Azul Hotel,15 Crescent Oaks Road,info@cieloazulhotel.com,(381) 8979668
+68017549,El Rincón de la Paz,27599 Maple Wood Point,reservas@elrincondelapaz.com,(366) 2875046
+24793018,Hotel Aurora Boreal,343 Westridge Lane,info@hotelauroraboreal.com,(278) 6904921
+85647203,Montaña Encantada,1 Anderson Place,reservas@montanaencantada.com,(816) 9119947
+37029481,Hotel Serenidad,7 Bunting Pass,contacto@hotelserenidad.com,(773) 9211516
+59648217,Costa Esmeralda,79 Superior Circle,info@costaesmeralda.com,(321) 6604764
+20483976,Grandia Suites,626 Rockefeller Terrace,info@grandiasuites.com,(827) 6273113
+48732056,Palacio del Trópico,5 Crowley Point,reservas@palaciodeltropico.com,(144) 8586729
+59072840,Hotel Encanto del Lago,56915 Morrow Avenue,contacto@hotelencantodellago.com,(682) 2926674
+73840921,El Mirador del Cielo,9 Bellgrove Place,info@elmiradordelcielo.com,(810) 9510262
+92346718,Hotel Mar y Tierra,6131 Oak Plaza,reservas@hotelmarytierra.com,(621) 2077401
+56498372,Oasis Sereno,86125 Sommers Terrace,info@oasissereno.com,(385) 6016421
+13729048,Hotel Brisa del Mar,16 Harper Junction,contacto@hotelbrisadelmar.com,(925) 6017503
+47691820,Villa de los Sueños,9989 Dahle Avenue,reservas@villadelossuenos.com,(596) 5713195
+82140975,El Refugio Tropical,18 Graedel Park,info@elrefugiotropical.com,(924) 7212192
+96027341,Hotel Bella Luna,3713 Kropf Terrace,reservas@hotelbellaluna.com,(895) 2853732
+30578219,Horizonte Dorado,62470 Surrey Drive,info@horizontedorado.com,(397) 7005837
+84730256,Eden Resort & Spa,25814 Vidon Pass,contacto@edenresortspa.com,(956) 6799154
+59012643,Hotel Lago Azul,5335 Comanche Trail,reservas@hotellagoazul.com,(350) 2545405
+39482067,Paraíso del Valle,3 Nevada Trail,info@paraisodelvalle.com,(442) 7497459
+76049120,Grand Hotel Imperial,242 Tony Road,contacto@grandhotelimperial.com,(360) 4325299
+28394751,Villa del Amanecer,653 Derek Plaza,reservas@villadelamanecer.com,(728) 7573119
+18429675,Hotel Maravilla,75021 Mariners Cove Terrace,info@hotelmaravilla.com,(950) 7781101
+94287035,Refugio del Bosque,36375 Pankratz Lane,contacto@refugiodelbosque.com,(541) 2390646
+31576290,Oasis del Desierto,9 Namekagon Court,reservas@oasisdeldesierto.com,(303) 9089721
+68940321,Hotel Sol y Luna,343 Magdeline Alley,info@hotelsolyluna.com,(368) 8819810
+70416239,Castillo del Mar,3 Cardinal Drive,reservas@castillodelmar.com,(240) 2376880
+54920738,Terraza del Cielo,1820 Elka Parkway,contacto@terraza_delcielo.com,(139) 4736044
+23097640,Hotel Luna de Miel,83135 Vidon Lane,info@hotellunademiel.com,(501) 4812346
+89160472,Rincón del Paraíso,61 Loeprich Pass,reservas@rincondelparaiso.com,(561) 7472633
+65432017,Hotel Azul Profundo,4082 Grayhawk Place,info@hotelazulprofundo.com,(938) 7585973
