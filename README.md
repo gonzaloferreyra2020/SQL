@@ -153,3 +153,10 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
 |               | direccion         | VARCHAR(50) NOT NULL                  |
 |               | telefono          | VARCHAR(20) NOT NULL                  |
 
+## Listado de vistas
+- **view_detalle_reserva:** Muestra el detalle de las reservas.
+- **view_disp_habitaciones:** Muestra las habitaciones disponibles para cada hotel.
+
+## Listado de funciones
+- **calcular_total:** Calcula el total que paga un determinado cliente.
+- **tipo_habitacion_mas_reservado:** Muestra el tipo de habitación mas reservado.
