@@ -14,7 +14,7 @@ FROM
 JOIN 
     cliente c ON r.cliente_id = c.cliente_id
 JOIN 
-    habitacion hab ON r.id_habitacion = hab.id_habitacion
+    habitacion hab ON r.habitacion_id = hab.habitacion_id
 JOIN 
     hotel h ON hab.id_hotel = h.id_hotel
 JOIN 
