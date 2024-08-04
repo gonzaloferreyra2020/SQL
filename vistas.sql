@@ -1,6 +1,6 @@
 CREATE VIEW view_detalle_reserva AS
 SELECT 
-    r.id_reserva,
+    r.reserva_id,
     c.nombre AS nombre_cliente,
     h.nombre AS nombre_hotel,
     hab.numero AS numero_habitacion,
@@ -20,4 +20,4 @@ JOIN
 JOIN 
     tiporeserva tr ON r.id_tipo_res = tr.id_tipo_res
 JOIN 
-    pago p ON r.id_reserva = p.id_reserva;
+    pago p ON r.reserva_id = p.reserva_id;
