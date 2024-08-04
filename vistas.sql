@@ -7,8 +7,8 @@ SELECT
     tr.descripcion AS tipo_reserva,
     p.monto AS monto_pago,
     p.estado AS estado_pago,
-    r.fecha_inicio,
-    r.fecha_fin
+    r.fecha_entrada,
+    r.fecha_salida
 FROM 
     reserva r
 JOIN 
