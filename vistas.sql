@@ -18,6 +18,6 @@ JOIN
 JOIN 
     hotel h ON hab.id_hotel = h.id_hotel
 JOIN 
-    tipo_de_reserva tr ON r.id_tipo_reserva = tr.id_tipo_reserva
+    tiporeserva tr ON r.id_tipo_reserva = tr.id_tipo_reserva
 JOIN 
     pago p ON r.id_reserva = p.id_reserva;
