@@ -16,7 +16,7 @@ JOIN
 JOIN 
     habitacion hab ON r.habitacion_id = hab.habitacion_id
 JOIN 
-    hotel h ON hab.id_hotel = h.id_hotel
+    hotel h ON hab.hotel_id = h.hotel_id
 JOIN 
     tiporeserva tr ON r.id_tipo_res = tr.id_tipo_res
 JOIN 
