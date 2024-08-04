@@ -12,7 +12,7 @@ SELECT
 FROM 
     reserva r
 JOIN 
-    cliente c ON r.id_cliente = c.id_cliente
+    cliente c ON r.cliente_id = c.cliente_id
 JOIN 
     habitacion hab ON r.id_habitacion = hab.id_habitacion
 JOIN 
