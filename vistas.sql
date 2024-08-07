@@ -1,3 +1,4 @@
+USE  bdhotel;
 -- VISTA DE DETALLE DE RESERVAS --
 CREATE VIEW view_detalle_reserva AS
 SELECT 
