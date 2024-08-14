@@ -160,3 +160,13 @@ Se trat de un sistema de reservaciones de hotel. Este permite gestionar hoteles,
 ## Listado de funciones
 - **calcular_total:** Calcula el total que paga un determinado cliente.
 - **tipo_habitacion_mas_reservado:** Muestra el tipo de habitación mas reservado.
+
+## Listado de triggers
+- **registrar_historial_pago:** Almacena los detalles de los pagos en una tabla de historial.
+- **Actualizar_disponibilidad:** Actualiza la disponibilidad de las habitaciones.
+  
+## Listado de stored procedures
+- **actualizar_cliente:** Actualiza el nombre, el email y el teléfono de un cliente.
+- **reporte_ocupacion:** Genera un reporte del porcentaje de ocupación.
+
+A completar.
